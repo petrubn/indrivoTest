@@ -1,0 +1,156 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tab {
+    display: none;
+    padding: 20px;
+}
+
+.tabs__nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #DCE0E9;
+    width: 70%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 20%;
+    cursor: pointer;
+}
+
+.tabs-nav__item {
+    margin-right: 2%;
+}
+
+.tabs-nav__item:active {
+    color: #F67E51;
+}
+
+
+.tabs__content {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2.1%;
+    border: 2px solid #C4CEDD;
+    font-size: 22px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .tab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    /* flex-wrap: wrap; */
+    
+}
+
+li {
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.tab-2 {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: end; */
+}
+
+
+.tab__desc {
+    display: none;
+}
+
+.tab__desc.is-active {
+    display: block;
+}
+
+.tabs-nav__item.is-active {
+    color: #F75B5B;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.is-active {
+    display: block;
+}
+
+li:nth-child(1):before {  
+    content: "  M";
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: #00A14F;
+    color: #53B379;
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    outline: 3px solid black;
+    border-radius: 15px;
+    font-size: 42px;
+    margin-bottom: 20px;
+    flex: 50%;
+}
+
+li:nth-child(2):before {  
+    content: " R";
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: #F77BBC;
+    color: #F6A5C9;
+    /* font-size: 18px; */
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    outline: 3px solid black;
+    border-radius: 12px;
+    font-size: 42px; 
+    margin: 20px;
+}
+
+ li:nth-child(3):before {  
+    content: " NS";
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: #006AF6;
+    color: #548DF6;
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    outline: 3px solid black;
+    border-radius: 12px;
+    font-size: 42px; 
+    margin: 20px;
+ }
+
+
+li:nth-child(odd) {
+    font-weight: 600;
+    
+}
+
+li:nth-child(even) {
+    color: #B1B3B5;
+    font-weight: 600;
+}
