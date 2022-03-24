@@ -24,8 +24,18 @@ let tab = function() {
         })
 
     }
-    
-
 };
 
 tab();
+
+const K = 22;
+const ARR = [10, 15, 18, 24, 38];
+
+function findBestMatch(K, ARR) {
+    const closest = ARR.reduce((prev, curr) => {
+    return (Math.abs(curr - K) < Math.abs(prev - K) ? curr : prev);
+});
+console.log(closest)
+}
+
+const bestMatch = findBestMatch(K, ARR);
